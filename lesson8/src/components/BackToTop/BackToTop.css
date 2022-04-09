@@ -1,0 +1,31 @@
+@keyframes BackToTop {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+.btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    outline: none;
+    border: 1px solid #ccc;
+    animation: BackToTop linear 0.5s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
